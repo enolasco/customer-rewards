@@ -5,7 +5,7 @@ import { customerReducer } from './reducers/customerReducer';
 const composeEnhancers = (typeof window !== 'undefined' && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
 const reducers = combineReducers({
-    auth: customerReducer,
+    customers: customerReducer,
 });
 
 export const store = createStore(
